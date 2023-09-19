@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onNothingSelected(p0: AdapterView<*>?) {            }
-            override fun onNavigationItemSelected(item: MenuItem): Boolean {            }
+            override fun onNavigationItemSelected(item: MenuItem): Boolean {return false}
         }
 
     }
