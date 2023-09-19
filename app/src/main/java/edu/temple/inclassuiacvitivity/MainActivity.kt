@@ -14,14 +14,14 @@ class MainActivity : AppCompatActivity() {
         val displayTextView = findViewById<TextView>(R.id.textDisplay)
 
         /* Step 1: Populate this array */
-        //val numberArray = Array Of Numbers
+        val numberArray = Array<Int>(10){ (it + 10)}
 
         /* Step 2: Create adapter to display items from array in Spinner */
-        //spinner.adapter = ArrayAdapter...
+        spinner.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, numberArray)
 
 
         // Step 3: Change TextView's text size to the number selected in the Spinner */
-        //spinner.onItemSelectedListener = object: ...
+        spinner.onItemSelectedListener = object: ...
 
     }
 }
